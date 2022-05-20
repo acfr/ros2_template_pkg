@@ -8,11 +8,7 @@ on:
 
 jobs:
   build-and-test:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-      fail-fast: false
+    runs-on: ubuntu-latest
     steps:
     - name: Setup ROS 2
       uses: ros-tooling/setup-ros@v0.3
