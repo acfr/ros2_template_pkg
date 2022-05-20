@@ -15,12 +15,12 @@ jobs:
       fail-fast: false
     steps:
     - name: Setup ROS 2
-      uses: ros-tooling/setup-ros@0.3
+      uses: ros-tooling/setup-ros@v0.3
       with: 
         required-ros-distributions: humble
       
     - name: Run Tests
-      uses: ros-tooling/action-ros-ci@0.2
+      uses: ros-tooling/action-ros-ci@v0.2
       with: 
         package-name: ros2_template_pkg
 
