@@ -11,17 +11,17 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-latest]
       fail-fast: false
     steps:
     - name: Setup ROS 2
       uses: ros-tooling/setup-ros@0.3
-    with:
+      with: 
         required-ros-distributions: humble
-
+      
     - name: Run Tests
       uses: ros-tooling/action-ros-ci@0.2
-      with:
+      with: 
         package-name: ros2_template_pkg
 
     - name: Upload Logs
