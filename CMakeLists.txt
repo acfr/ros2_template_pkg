@@ -46,4 +46,9 @@ if(BUILD_TESTING)
   
 endif()
 
+#this must be added so launch files can be used from CLI
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME})
+
 ament_package()
