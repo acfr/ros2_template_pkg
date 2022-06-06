@@ -11,6 +11,14 @@ It has the following all setup
   - Simple unit test template
   - Documentation template
 
+## How to run
+``` bash
+cd ~/dev_ws/src
+git clone -c http.sslverify=false https://github.com/acfr/ros2_template_pkg.git
+cd ros2-template_pkg
+git submodule init
+git -c http.sslverify=false submodule update
+```
 ## House Keping
 
 ### Coding Style 
