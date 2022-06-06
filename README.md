@@ -11,14 +11,33 @@ It has the following all setup
   - Simple unit test template
   - Documentation template
 
-## How to run
+## How to build
 ``` bash
 cd ~/dev_ws/src
 git clone -c http.sslverify=false https://github.com/acfr/ros2_template_pkg.git
 cd ros2-template_pkg
 git submodule init
 git -c http.sslverify=false submodule update
+cd ..
+colcon build
 ```
+
+## How to run 
+
+### Using ros2 run
+- You can run each node individually using ros2 run using 
+  `ros2 run <package_name> <node_executable_name>`
+- Example
+`ros2 run ros2_template_pkg talker`
+
+### Using ros2 launch
+- Launch files are wrtitten using python scripts
+- To invoke a node you can run the python script using ros2 launch like below
+  `ros2 launch <package_name> <launch_file_name.py>`
+- Example 
+  `ros2 launch ros2_template_pkg all_launch.py`
+
+
 ## House Keping
 
 ### Coding Style 
@@ -36,8 +55,8 @@ git -c http.sslverify=false submodule update
 - All service nodes must be named in this format `<some>_service_client_node` or `<some>_service_server_node`
 
 - Where `<some>` is a short descriptive name of the task the node does. Example: Fibonacci or AddTwoInts
-
-- All nodes must end with `_node` postfix. This makes it easier to distinguish which files are node files without opening them.
+- To invoke a node you can run the python script from its root folder like below
+must end with `_node` postfix. This makes it easier to distinguish which files are node files without opening them.
 
 ### Documentation 
 Doxygen used with rosdoc2 
