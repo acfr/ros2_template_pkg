@@ -4,7 +4,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     return LaunchDescription([
         Node(
-            package="multi_node_launcher",
+            package="ros2_template_pkg",
             executable="parameters",
             name="custom_parameter_node",
             output="screen",

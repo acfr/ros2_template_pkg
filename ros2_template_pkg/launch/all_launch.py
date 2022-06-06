@@ -14,12 +14,12 @@ def generate_launch_description():
             default_value=[launch.substitutions.EnvironmentVariable(env_var_name), '_'],
             description='Prefix for node names'),
         launch_ros.actions.Node(
-            package='multi_node_launcher', executable='talker', output='screen',
+            package='ros2_template_pkg', executable='talker', output='screen',
             name=[launch.substitutions.LaunchConfiguration('node_prefix'), 'talker']),
         launch_ros.actions.Node(
-            package='multi_node_launcher', executable='listener', output='screen',
+            package='ros2_template_pkg', executable='listener', output='screen',
             name=[launch.substitutions.LaunchConfiguration('node_prefix'), 'listener']),
         launch_ros.actions.Node(
-            package='multi_node_launcher', executable='timer', output='screen',
+            package='ros2_template_pkg', executable='timer', output='screen',
             name=[launch.substitutions.LaunchConfiguration('node_prefix'), 'timer'])         
     ])
