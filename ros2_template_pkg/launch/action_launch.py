@@ -14,9 +14,9 @@ def generate_launch_description():
             default_value=[launch.substitutions.EnvironmentVariable(env_var_name), '_'],
             description='Prefix for node names'),
         launch_ros.actions.Node(
-            package='multi_node_launcher', executable='action_server', output='screen',
+            package='ros2_template_pkg', executable='action_server', output='screen',
             name=[launch.substitutions.LaunchConfiguration('node_prefix'), 'action_server']),
         launch_ros.actions.Node(
-            package='multi_node_launcher', executable='action_client', output='screen',
+            package='ros2_template_pkg', executable='action_client', output='screen',
             name=[launch.substitutions.LaunchConfiguration('node_prefix'), 'action_client'])         
     ])
