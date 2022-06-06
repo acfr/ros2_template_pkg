@@ -67,7 +67,7 @@ See [doxygen](https://doxygen.nl/manual/index.html) to learn more about comment 
 
 ## Dependencies
 
-- [acfr_ros2_interfaces]() - Contains interface description files such .msg(s) and .srv(s) 
+- [acfr_ros2_interfaces](https://github.com/acfr/acfr_ros2_interfaces.git) - Contains interface description files such .msg(s) and .srv(s) 
 - [rosdoc2](https://github.com/ros-infrastructure/rosdoc2)
 - doxygen
 - gtest
