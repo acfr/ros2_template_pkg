@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="template__node__launch_8py" kind="file" language="Python">
+    <compoundname>template_node_launch.py</compoundname>
+    <innernamespace refid="namespacetemplate__node__launch">template_node_launch</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacetemplate__node__launch" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>platform</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>launch</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>launch.actions</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>launch.substitutions</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>launch_ros.actions</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="namespacetemplate__node__launch_1af75f51023321cf03af4a47213f754924" refkind="member"><highlight class="normal">env_var_name<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;USER&apos;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>platform.system()<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;Windows&apos;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;USERNAME&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="namespacetemplate__node__launch_1ab74a78953f1919e7a85fbdc637d6b462" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacetemplate__node__launch_1ab74a78953f1919e7a85fbdc637d6b462" kindref="member">generate_launch_description</ref>():</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>launch.LaunchDescription([</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>launch.actions.DeclareLaunchArgument(</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;node_prefix&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default_value=[launch.substitutions.EnvironmentVariable(env_var_name),<sp/></highlight><highlight class="stringliteral">&apos;_&apos;</highlight><highlight class="normal">],</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&apos;Prefix<sp/>for<sp/>node<sp/>names&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>launch_ros.actions.Node(</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>package=</highlight><highlight class="stringliteral">&apos;ros2_template_pkg&apos;</highlight><highlight class="normal">,<sp/>executable=</highlight><highlight class="stringliteral">&apos;ros2_template_node&apos;</highlight><highlight class="normal">,<sp/>output=</highlight><highlight class="stringliteral">&apos;screen&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=[launch.substitutions.LaunchConfiguration(</highlight><highlight class="stringliteral">&apos;node_prefix&apos;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&apos;ros2_template_node&apos;</highlight><highlight class="normal">])<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>])</highlight></codeline>
+    </programlisting>
+    <location file="launch/template_node_launch.py"/>
+  </compounddef>
+</doxygen>
