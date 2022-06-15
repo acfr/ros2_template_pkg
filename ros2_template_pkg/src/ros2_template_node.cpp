@@ -15,6 +15,14 @@ void RosTemplateNode::print(std::string message)
   std::cout << message;
 }
 
+
+bool RosTemplateNode::addTwoInts(int a, int b, int &sum)
+{
+  sum = a + b;
+
+  return true;
+}
+
 int main(int argc, char ** argv)
 {
   (void) argc;

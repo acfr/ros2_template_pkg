@@ -62,6 +62,7 @@ install(TARGETS
 if(BUILD_TESTING)
   find_package(ament_cmake_gtest REQUIRED)
   find_package(ament_lint_auto REQUIRED)
+  find_package(ament_cmake_uncrustify REQUIRED)
 
   # the following line skips the linter which checks for copyrights
   # comment the line when a copyright and license is added to all source files
@@ -77,7 +78,7 @@ if(BUILD_TESTING)
   # ament_lint_auto_find_test_dependencies()
 
   # Add a gtest named ${PROJECT_NAME}
-  ament_add_gtest(${PROJECT_NAME} tests/test_ros2_template_node.cpp)
+  ament_add_gtest(${PROJECT_NAME} test/test_ros2_template_node.cpp)
   
 endif()
 

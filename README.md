@@ -12,6 +12,21 @@ It has the following all setup
   - Documentation template
 
 ## How to build
+### Prerwquisites
+- Ubuntu 22.04 
+- ROS2 Humble 
+
+### Install ROS2
+``` bash
+sudo apt-update 
+sudo apt-upgrade -y
+sudo apt install ros-humble-desktop
+```
+### Create a Development Workspace
+``` bash
+mkdir -p ~/dev_ws/src
+```
+### Clone a Package
 ``` bash
 cd ~/dev_ws/src
 git clone -c http.sslverify=false https://github.com/acfr/ros2_template_pkg.git
@@ -19,6 +34,7 @@ cd ros2_template_pkg
 git submodule init
 git -c http.sslverify=false submodule update
 cd ../..
+rosdep install -i --from-path src --rosdistro humble -y
 colcon build
 ```
 
@@ -37,6 +53,9 @@ colcon build
 - Example 
   `ros2 launch ros2_template_pkg all_launch.py`
 
+## Unit Testing
+
+## Running in Docker
 
 ## House Keping
 
