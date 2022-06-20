@@ -60,23 +60,25 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
-  find_package(ament_cmake_gtest REQUIRED)
-  find_package(ament_lint_auto REQUIRED)
   find_package(ament_cmake_uncrustify REQUIRED)
+  ament_uncrustify()
 
-  # the following line skips the linter which checks for copyrights
-  # comment the line when a copyright and license is added to all source files
-  set(ament_cmake_copyright_FOUND TRUE)
+  find_package(ament_cmake_cppcheck REQUIRED)
+  ament_cppcheck()
+
+  find_package(ament_cmake_copyright REQUIRED)
+  ament_copyright()
+
+  find_package(ament_cmake_lint_cmake REQUIRED)
+  ament_lint_cmake()
+
+  find_package(ament_cmake_xmllint REQUIRED)
+  ament_xmllint()
+
+  find_package(ament_cmake_cpplint REQUIRED)
+  ament_cpplint()
   
-  set(ament_cmake_uncrustify_FOUND TRUE)
-
-  # the following line skips cpplint (only works in a git repo)
-  # comment the line when this package is in a git repo and when
-  # a copyright and license is added to all source files
-  set(ament_cmake_cpplint_FOUND TRUE)
-  
-  # ament_lint_auto_find_test_dependencies()
-
+  find_package(ament_cmake_gtest REQUIRED)
   # Add a gtest named ${PROJECT_NAME}
   ament_add_gtest(${PROJECT_NAME} test/test_ros2_template_node.cpp)
   
