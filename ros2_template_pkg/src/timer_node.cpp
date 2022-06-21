@@ -1,4 +1,4 @@
-// BSD 3-Clause License
+// 3-Clause BSD License
 //
 // Copyright (c) 2022, Australian Centre for Field Robotics
 // All rights reserved.
