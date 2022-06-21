@@ -12,7 +12,7 @@ It has the following all setup
   - Documentation template
 
 ## How to build
-### Prerwquisites
+### Prerequisites
 - Ubuntu 22.04 
 - ROS2 Humble 
 
