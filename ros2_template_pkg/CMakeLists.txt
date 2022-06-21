@@ -60,23 +60,23 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
-  # find_package(ament_cmake_uncrustify REQUIRED)
-  # ament_uncrustify()
 
   find_package(ament_cmake_cppcheck REQUIRED)
-  ament_cppcheck()
-
   find_package(ament_cmake_copyright REQUIRED)
-  ament_copyright()
-
   find_package(ament_cmake_lint_cmake REQUIRED)
-  ament_lint_cmake()
-
   find_package(ament_cmake_xmllint REQUIRED)
-  ament_xmllint()
-
+  find_package(ament_cmake_uncrustify REQUIRED)
   find_package(ament_cmake_cpplint REQUIRED)
-  ament_cpplint()
+  
+  set(_linter_excludes ./extern/googletest)
+  set(_copywrite_excludes ./doc)
+  
+  # ament_uncrustify()
+  # ament_lint_cmake()
+  # ament_cpplint()
+  ament_cppcheck()
+  ament_xmllint()
+  ament_copyright()
 
   find_package(ament_cmake_gtest REQUIRED)
   # Add a gtest named ${PROJECT_NAME}
