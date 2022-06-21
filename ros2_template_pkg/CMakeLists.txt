@@ -60,8 +60,8 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
-  find_package(ament_cmake_uncrustify REQUIRED)
-  ament_uncrustify()
+  # find_package(ament_cmake_uncrustify REQUIRED)
+  # ament_uncrustify()
 
   find_package(ament_cmake_cppcheck REQUIRED)
   ament_cppcheck()
@@ -77,7 +77,7 @@ if(BUILD_TESTING)
 
   find_package(ament_cmake_cpplint REQUIRED)
   ament_cpplint()
-  
+
   find_package(ament_cmake_gtest REQUIRED)
   # Add a gtest named ${PROJECT_NAME}
   ament_add_gtest(${PROJECT_NAME} test/test_ros2_template_node.cpp)
