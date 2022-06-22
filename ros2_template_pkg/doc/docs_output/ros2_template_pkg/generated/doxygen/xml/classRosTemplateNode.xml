@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ros2_template_pkg/ros2_template_node.hpp" line="18" column="5" bodyfile="src/ros2_template_node.cpp" bodystart="3" bodyend="6"/>
+        <location file="include/ros2_template_pkg/ros2_template_node.hpp" line="46" column="7" bodyfile="src/ros2_template_node.cpp" bodystart="32" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="classRosTemplateNode_1a9155df922c6bcd1c0ae59a478620b5d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ros2_template_pkg/ros2_template_node.hpp" line="24" column="5" bodyfile="src/ros2_template_node.cpp" bodystart="8" bodyend="11"/>
+        <location file="include/ros2_template_pkg/ros2_template_node.hpp" line="52" column="7" bodyfile="src/ros2_template_node.cpp" bodystart="37" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="classRosTemplateNode_1a498ef5847db38f0dce287e924c12bd31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -63,8 +63,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ros2_template_pkg/ros2_template_node.hpp" line="41" column="10" bodyfile="src/ros2_template_node.cpp" bodystart="13" bodyend="16"/>
-        <referencedby refid="ros2__template__node_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="ros2__template__node_8cpp" startline="26" endline="35">main</referencedby>
+        <location file="include/ros2_template_pkg/ros2_template_node.hpp" line="69" column="12" bodyfile="src/ros2_template_node.cpp" bodystart="42" bodyend="45"/>
+        <referencedby refid="ros2__template__node_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="ros2__template__node_8cpp" startline="55" endline="64">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="classRosTemplateNode_1ac160453a164c3be37134fefd31562c3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -138,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ros2_template_pkg/ros2_template_node.hpp" line="61" column="10" bodyfile="src/ros2_template_node.cpp" bodystart="19" bodyend="24"/>
+        <location file="include/ros2_template_pkg/ros2_template_node.hpp" line="89" column="12" bodyfile="src/ros2_template_node.cpp" bodystart="48" bodyend="53"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -147,7 +147,7 @@
     <detaileddescription>
 <para>This is a template for ros2 nodes. Not to be mistaken for c++ template </para>
     </detaileddescription>
-    <location file="include/ros2_template_pkg/ros2_template_node.hpp" line="12" column="1" bodyfile="include/ros2_template_pkg/ros2_template_node.hpp" bodystart="12" bodyend="62"/>
+    <location file="include/ros2_template_pkg/ros2_template_node.hpp" line="40" column="1" bodyfile="include/ros2_template_pkg/ros2_template_node.hpp" bodystart="40" bodyend="90"/>
     <listofallmembers>
       <member refid="classRosTemplateNode_1ac160453a164c3be37134fefd31562c3b" prot="public" virt="non-virtual"><scope>RosTemplateNode</scope><name>addTwoInts</name></member>
       <member refid="classRosTemplateNode_1a498ef5847db38f0dce287e924c12bd31" prot="public" virt="non-virtual"><scope>RosTemplateNode</scope><name>print</name></member>

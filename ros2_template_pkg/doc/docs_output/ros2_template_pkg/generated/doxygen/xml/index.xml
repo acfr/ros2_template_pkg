@@ -82,6 +82,9 @@
     <member refid="namespaceconf_1ad52ab994fc73db35498097161f128509" kind="variable"><name>rosdoc2_settings</name></member>
     <member refid="namespaceconf_1a1f263de5de89293c34954c5636bff98d" kind="function"><name>ensure_global</name></member>
   </compound>
+  <compound refid="namespaceexample__launch" kind="namespace"><name>example_launch</name>
+    <member refid="namespaceexample__launch_1af49d150abaa0c5580b32932333d2f2c8" kind="function"><name>generate_launch_description</name></member>
+  </compound>
   <compound refid="namespaceparams__launch" kind="namespace"><name>params_launch</name>
     <member refid="namespaceparams__launch_1a2cf777e91d17ba6a75224cef14151295" kind="function"><name>generate_launch_description</name></member>
   </compound>
@@ -102,11 +105,15 @@
   </compound>
   <compound refid="default__sphinx__project_2conf_8py" kind="file"><name>conf.py</name>
   </compound>
+  <compound refid="LICENSE_8md" kind="file"><name>LICENSE.md</name>
+  </compound>
   <compound refid="ros2__template__node_8hpp" kind="file"><name>ros2_template_node.hpp</name>
   </compound>
   <compound refid="action__launch_8py" kind="file"><name>action_launch.py</name>
   </compound>
   <compound refid="all__launch_8py" kind="file"><name>all_launch.py</name>
+  </compound>
+  <compound refid="example__launch_8py" kind="file"><name>example_launch.py</name>
   </compound>
   <compound refid="params__launch_8py" kind="file"><name>params_launch.py</name>
   </compound>
@@ -148,11 +155,19 @@
     <member refid="test__ros2__template__node_8cpp_1a44b5af30256d8833ebdc5cfe9f66ec09" kind="function"><name>TEST</name></member>
     <member refid="test__ros2__template__node_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
   </compound>
+  <compound refid="md_doc_docs_output_ros2_template_pkg__static_collapsible_lists_LICENSE" kind="page"><name>md_doc_docs_output_ros2_template_pkg__static_collapsible_lists_LICENSE</name>
+  </compound>
+  <compound refid="dir_8c9024ae08cce2e161554c1c73fc43ff" kind="dir"><name>doc/docs_output/ros2_template_pkg/_static</name>
+  </compound>
+  <compound refid="dir_e6a08978a59536e8e721d917a6704728" kind="dir"><name>doc/docs_output/ros2_template_pkg/_static/collapsible-lists</name>
+  </compound>
   <compound refid="dir_7942e69bb106ca84dc9938958f04c8f1" kind="dir"><name>doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project</name>
   </compound>
   <compound refid="dir_e68e8157741866f444e17edd764ebbae" kind="dir"><name>doc</name>
   </compound>
   <compound refid="dir_55cc21aadbece90364c04f0881f692a0" kind="dir"><name>doc/docs_build</name>
+  </compound>
+  <compound refid="dir_b80630b7b114caf970531ea20ee583bc" kind="dir"><name>doc/docs_output</name>
   </compound>
   <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
   </compound>
@@ -161,6 +176,8 @@
   <compound refid="dir_383e9e1e77c69eebc88de0abce68f898" kind="dir"><name>doc/docs_build/ros2_template_pkg</name>
   </compound>
   <compound refid="dir_94ad26aa8faae8ef72a1ccab8ce0da5b" kind="dir"><name>doc/docs_build/ros2_template_pkg/ros2_template_pkg</name>
+  </compound>
+  <compound refid="dir_aebd524469ddb7ce2e66a9db0cfce9e0" kind="dir"><name>doc/docs_output/ros2_template_pkg</name>
   </compound>
   <compound refid="dir_ed542a3f9df8441069e01b31b304dd8b" kind="dir"><name>include/ros2_template_pkg</name>
   </compound>

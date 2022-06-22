@@ -15,8 +15,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/listener_node.cpp" line="22" column="38" bodyfile="src/listener_node.cpp" bodystart="22" bodyend="-1"/>
-        <referencedby refid="classMinimalSubscriber_1acc0cfcf7e2c8f60e2faefd1c08e40135" compoundref="listener__node_8cpp" startline="10" endline="15">MinimalSubscriber</referencedby>
+        <location file="src/listener_node.cpp" line="52" column="38" bodyfile="src/listener_node.cpp" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classMinimalSubscriber_1acc0cfcf7e2c8f60e2faefd1c08e40135" compoundref="listener__node_8cpp" startline="40" endline="45">MinimalSubscriber</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -31,9 +31,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/listener_node.cpp" line="10" column="5" bodyfile="src/listener_node.cpp" bodystart="10" bodyend="15"/>
-        <references refid="classMinimalSubscriber_1ac8c2cc8053f6e9c526c9ad5daad35ba7" compoundref="listener__node_8cpp" startline="22">subscription_</references>
-        <references refid="classMinimalSubscriber_1a5ded8a6bc4fd0e4232a3299994eb3b0a" compoundref="listener__node_8cpp" startline="18" endline="21">topic_callback</references>
+        <location file="src/listener_node.cpp" line="40" column="5" bodyfile="src/listener_node.cpp" bodystart="40" bodyend="45"/>
+        <references refid="classMinimalSubscriber_1ac8c2cc8053f6e9c526c9ad5daad35ba7" compoundref="listener__node_8cpp" startline="52">subscription_</references>
+        <references refid="classMinimalSubscriber_1a5ded8a6bc4fd0e4232a3299994eb3b0a" compoundref="listener__node_8cpp" startline="48" endline="51">topic_callback</references>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -52,8 +52,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/listener_node.cpp" line="18" column="10" bodyfile="src/listener_node.cpp" bodystart="18" bodyend="21"/>
-        <referencedby refid="classMinimalSubscriber_1acc0cfcf7e2c8f60e2faefd1c08e40135" compoundref="listener__node_8cpp" startline="10" endline="15">MinimalSubscriber</referencedby>
+        <location file="src/listener_node.cpp" line="48" column="10" bodyfile="src/listener_node.cpp" bodystart="48" bodyend="51"/>
+        <referencedby refid="classMinimalSubscriber_1acc0cfcf7e2c8f60e2faefd1c08e40135" compoundref="listener__node_8cpp" startline="40" endline="45">MinimalSubscriber</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -82,7 +82,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="src/listener_node.cpp" line="7" column="1" bodyfile="src/listener_node.cpp" bodystart="8" bodyend="23"/>
+    <location file="src/listener_node.cpp" line="37" column="1" bodyfile="src/listener_node.cpp" bodystart="38" bodyend="53"/>
     <listofallmembers>
       <member refid="classMinimalSubscriber_1acc0cfcf7e2c8f60e2faefd1c08e40135" prot="public" virt="non-virtual"><scope>MinimalSubscriber</scope><name>MinimalSubscriber</name></member>
       <member refid="classMinimalSubscriber_1ac8c2cc8053f6e9c526c9ad5daad35ba7" prot="private" virt="non-virtual"><scope>MinimalSubscriber</scope><name>subscription_</name></member>

@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/talker_node.cpp" line="32" column="34" bodyfile="src/talker_node.cpp" bodystart="32" bodyend="-1"/>
+        <location file="src/talker_node.cpp" line="61" column="34" bodyfile="src/talker_node.cpp" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classMinimalPublisher_1a2bce9d895668e3690e5186059f651784" prot="private" static="no" mutable="no">
         <type>rclcpp::Publisher&lt; std_msgs::msg::String &gt;::SharedPtr</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/talker_node.cpp" line="33" column="35" bodyfile="src/talker_node.cpp" bodystart="33" bodyend="-1"/>
+        <location file="src/talker_node.cpp" line="62" column="35" bodyfile="src/talker_node.cpp" bodystart="62" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classMinimalPublisher_1a896abc7d57397667e774d4db7ae44ffe" prot="private" static="no" mutable="no">
         <type>size_t</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/talker_node.cpp" line="34" column="12" bodyfile="src/talker_node.cpp" bodystart="34" bodyend="-1"/>
+        <location file="src/talker_node.cpp" line="63" column="12" bodyfile="src/talker_node.cpp" bodystart="63" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -56,8 +56,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/talker_node.cpp" line="16" column="5" bodyfile="src/talker_node.cpp" bodystart="16" bodyend="22"/>
-        <references refid="classMinimalPublisher_1a6019391d2635ca5b3a9b8409151806c3" compoundref="talker__node_8cpp" startline="25" endline="31">timer_callback</references>
+        <location file="src/talker_node.cpp" line="45" column="5" bodyfile="src/talker_node.cpp" bodystart="45" bodyend="51"/>
+        <references refid="classMinimalPublisher_1a6019391d2635ca5b3a9b8409151806c3" compoundref="talker__node_8cpp" startline="54" endline="60">timer_callback</references>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -72,8 +72,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/talker_node.cpp" line="25" column="10" bodyfile="src/talker_node.cpp" bodystart="25" bodyend="31"/>
-        <referencedby refid="classMinimalPublisher_1aa04f84fd8b936705856aa3525ec6f119" compoundref="talker__node_8cpp" startline="16" endline="22">MinimalPublisher</referencedby>
+        <location file="src/talker_node.cpp" line="54" column="10" bodyfile="src/talker_node.cpp" bodystart="54" bodyend="60"/>
+        <referencedby refid="classMinimalPublisher_1aa04f84fd8b936705856aa3525ec6f119" compoundref="talker__node_8cpp" startline="45" endline="51">MinimalPublisher</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -102,7 +102,7 @@
         <label>rclcpp::Node</label>
       </node>
     </collaborationgraph>
-    <location file="src/talker_node.cpp" line="13" column="1" bodyfile="src/talker_node.cpp" bodystart="14" bodyend="35"/>
+    <location file="src/talker_node.cpp" line="42" column="1" bodyfile="src/talker_node.cpp" bodystart="43" bodyend="64"/>
     <listofallmembers>
       <member refid="classMinimalPublisher_1a896abc7d57397667e774d4db7ae44ffe" prot="private" virt="non-virtual"><scope>MinimalPublisher</scope><name>count_</name></member>
       <member refid="classMinimalPublisher_1aa04f84fd8b936705856aa3525ec6f119" prot="public" virt="non-virtual"><scope>MinimalPublisher</scope><name>MinimalPublisher</name></member>

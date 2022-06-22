@@ -3,6 +3,7 @@
   <compounddef id="dir_e68e8157741866f444e17edd764ebbae" kind="dir">
     <compoundname>doc</compoundname>
     <innerdir refid="dir_55cc21aadbece90364c04f0881f692a0">doc/docs_build</innerdir>
+    <innerdir refid="dir_b80630b7b114caf970531ea20ee583bc">doc/docs_output</innerdir>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

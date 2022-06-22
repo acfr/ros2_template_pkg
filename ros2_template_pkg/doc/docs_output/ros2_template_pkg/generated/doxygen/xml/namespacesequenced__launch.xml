@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="launch/sequenced_launch.py" line="9" column="1" bodyfile="launch/sequenced_launch.py" bodystart="9" bodyend="12"/>
+        <location file="launch/sequenced_launch.py" line="38" column="1" bodyfile="launch/sequenced_launch.py" bodystart="38" bodyend="41"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

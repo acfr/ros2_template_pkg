@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" line="22" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" bodystart="22" bodyend="-1"/>
+        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" line="51" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceconf_1a8d12755aa54c237c377547861225767a" prot="public" static="no" mutable="no">
         <type></type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" line="40" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" bodystart="40" bodyend="-1"/>
+        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" line="69" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceconf_1a23cf0a6214b803c950fd9215445f9241" prot="public" static="no" mutable="no">
         <type>dictionary</type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" line="52" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" bodystart="52" bodyend="-1"/>
+        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" line="81" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" bodystart="81" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceconf_1acfc3de3406782f5938613e1b7ceff095" prot="public" static="no" mutable="no">
         <type></type>
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" line="59" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" bodystart="59" bodyend="-1"/>
+        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" line="88" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" bodystart="88" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceconf_1a7f1b143ff25817758abd21a7db110510" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" line="85" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" bodystart="85" bodyend="-1"/>
+        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" line="114" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" bodystart="114" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceconf_1a45653c983098153b78e33600e39230eb" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -94,7 +94,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="23" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="23" bodyend="-1"/>
+        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="52" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceconf_1a33fa97cf51dcb25970fbf53f10159589" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -108,7 +108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="25" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="25" bodyend="-1"/>
+        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="54" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceconf_1a637c239d256432248aa8d9f3ab0b8c52" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="26" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="26" bodyend="-1"/>
+        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="55" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceconf_1a325dc746d8bf05c54d26351c35a21d90" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -136,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="29" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="29" bodyend="-1"/>
+        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="58" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceconf_1ade15c5b54093b64d7c428ec19ca5b1cb" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -150,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="31" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="31" bodyend="-1"/>
+        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="60" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceconf_1ae475e080536acb271a0a0efe56c3ba42" prot="public" static="no" mutable="no">
         <type>list</type>
@@ -168,7 +168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="43" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="43" bodyend="-1"/>
+        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="72" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceconf_1ae850ae634911b713e036b43894fdd525" prot="public" static="no" mutable="no">
         <type>list</type>
@@ -182,7 +182,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="48" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="48" bodyend="-1"/>
+        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="77" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="77" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceconf_1a7ad48fb6f3e9b129c02346ea0d3527c1" prot="public" static="no" mutable="no">
         <type>list</type>
@@ -196,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="53" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="53" bodyend="-1"/>
+        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="82" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="82" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceconf_1a6fcd7e5236f355b1e1a55f9d95988810" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -210,7 +210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="55" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="55" bodyend="-1"/>
+        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="84" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="84" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceconf_1a8f403b478ab86c8b7663d82045f21741" prot="public" static="no" mutable="no">
         <type>dictionary</type>
@@ -228,7 +228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="57" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="57" bodyend="-1"/>
+        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="86" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="86" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceconf_1aeaafa42217d24810edc9b116b88a4585" prot="public" static="no" mutable="no">
         <type>dictionary</type>
@@ -249,7 +249,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="72" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="72" bodyend="-1"/>
+        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="101" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="101" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceconf_1ad52ab994fc73db35498097161f128509" prot="public" static="no" mutable="no">
         <type>dictionary</type>
@@ -265,7 +265,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="94" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="94" bodyend="-1"/>
+        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" line="123" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project/conf.py" bodystart="123" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -289,7 +289,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" line="11" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" bodystart="11" bodyend="14"/>
+        <location file="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" line="40" column="1" bodyfile="doc/docs_build/ros2_template_pkg/ros2_template_pkg/conf.py" bodystart="40" bodyend="43"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

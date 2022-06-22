@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="launch/template_node_launch.py" line="8" column="1" bodyfile="launch/template_node_launch.py" bodystart="8" bodyend="-1"/>
+        <location file="launch/template_node_launch.py" line="37" column="1" bodyfile="launch/template_node_launch.py" bodystart="37" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="launch/template_node_launch.py" line="10" column="1" bodyfile="launch/template_node_launch.py" bodystart="10" bodyend="19"/>
+        <location file="launch/template_node_launch.py" line="39" column="1" bodyfile="launch/template_node_launch.py" bodystart="39" bodyend="48"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

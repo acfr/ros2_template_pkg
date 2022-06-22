@@ -112,7 +112,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="timer__node_8cpp_source.html#l00014">14</a> of file <a class="el" href="timer__node_8cpp_source.html">timer_node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timer__node_8cpp_source.html#l00043">43</a> of file <a class="el" href="timer__node_8cpp_source.html">timer_node.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a122f45a301f211715e29a385a922ec47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a122f45a301f211715e29a385a922ec47">&#9670;&nbsp;</a></span>ElapsedTimePublisher()</h2>
@@ -137,17 +137,17 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="timer__node_8cpp_source.html#l00017">17</a> of file <a class="el" href="timer__node_8cpp_source.html">timer_node.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    : Node(<span class="stringliteral">&quot;time_publisher&quot;</span>), <a class="code" href="classElapsedTimePublisher.html#a3aa9b4d72161c7e7bb1443beb5b7009e">count_</a>(1)</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <a class="code" href="classElapsedTimePublisher.html#a294df156baf22f01c70352d60e600ff0">publisher_</a> = this-&gt;create_publisher&lt;std_msgs::msg::String&gt;(<span class="stringliteral">&quot;time&quot;</span>, 10);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <a class="code" href="classElapsedTimePublisher.html#a7dd07c51fb286826602ee2bd72233bc7">timer_</a> = this-&gt;create_wall_timer(</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      1000ms, std::bind(&amp;<a class="code" href="classElapsedTimePublisher.html#a4befbf3852e66aa15cd141ba5baceb31">ElapsedTimePublisher::timer_callback</a>, <span class="keyword">this</span>));</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
-<div class="ttc" id="aclassElapsedTimePublisher_html_a294df156baf22f01c70352d60e600ff0"><div class="ttname"><a href="classElapsedTimePublisher.html#a294df156baf22f01c70352d60e600ff0">ElapsedTimePublisher::publisher_</a></div><div class="ttdeci">rclcpp::Publisher&lt; std_msgs::msg::String &gt;::SharedPtr publisher_</div><div class="ttdef"><b>Definition:</b> <a href="timer__node_8cpp_source.html#l00034">timer_node.cpp:34</a></div></div>
-<div class="ttc" id="aclassElapsedTimePublisher_html_a3aa9b4d72161c7e7bb1443beb5b7009e"><div class="ttname"><a href="classElapsedTimePublisher.html#a3aa9b4d72161c7e7bb1443beb5b7009e">ElapsedTimePublisher::count_</a></div><div class="ttdeci">size_t count_</div><div class="ttdef"><b>Definition:</b> <a href="timer__node_8cpp_source.html#l00035">timer_node.cpp:35</a></div></div>
-<div class="ttc" id="aclassElapsedTimePublisher_html_a4befbf3852e66aa15cd141ba5baceb31"><div class="ttname"><a href="classElapsedTimePublisher.html#a4befbf3852e66aa15cd141ba5baceb31">ElapsedTimePublisher::timer_callback</a></div><div class="ttdeci">void timer_callback()</div><div class="ttdef"><b>Definition:</b> <a href="timer__node_8cpp_source.html#l00026">timer_node.cpp:26</a></div></div>
-<div class="ttc" id="aclassElapsedTimePublisher_html_a7dd07c51fb286826602ee2bd72233bc7"><div class="ttname"><a href="classElapsedTimePublisher.html#a7dd07c51fb286826602ee2bd72233bc7">ElapsedTimePublisher::timer_</a></div><div class="ttdeci">rclcpp::TimerBase::SharedPtr timer_</div><div class="ttdef"><b>Definition:</b> <a href="timer__node_8cpp_source.html#l00033">timer_node.cpp:33</a></div></div>
+<p class="definition">Definition at line <a class="el" href="timer__node_8cpp_source.html#l00046">46</a> of file <a class="el" href="timer__node_8cpp_source.html">timer_node.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    : Node(<span class="stringliteral">&quot;time_publisher&quot;</span>), <a class="code" href="classElapsedTimePublisher.html#a3aa9b4d72161c7e7bb1443beb5b7009e">count_</a>(1)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <a class="code" href="classElapsedTimePublisher.html#a294df156baf22f01c70352d60e600ff0">publisher_</a> = this-&gt;create_publisher&lt;std_msgs::msg::String&gt;(<span class="stringliteral">&quot;time&quot;</span>, 10);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <a class="code" href="classElapsedTimePublisher.html#a7dd07c51fb286826602ee2bd72233bc7">timer_</a> = this-&gt;create_wall_timer(</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      1000ms, std::bind(&amp;<a class="code" href="classElapsedTimePublisher.html#a4befbf3852e66aa15cd141ba5baceb31">ElapsedTimePublisher::timer_callback</a>, <span class="keyword">this</span>));</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="ttc" id="aclassElapsedTimePublisher_html_a294df156baf22f01c70352d60e600ff0"><div class="ttname"><a href="classElapsedTimePublisher.html#a294df156baf22f01c70352d60e600ff0">ElapsedTimePublisher::publisher_</a></div><div class="ttdeci">rclcpp::Publisher&lt; std_msgs::msg::String &gt;::SharedPtr publisher_</div><div class="ttdef"><b>Definition:</b> <a href="timer__node_8cpp_source.html#l00063">timer_node.cpp:63</a></div></div>
+<div class="ttc" id="aclassElapsedTimePublisher_html_a3aa9b4d72161c7e7bb1443beb5b7009e"><div class="ttname"><a href="classElapsedTimePublisher.html#a3aa9b4d72161c7e7bb1443beb5b7009e">ElapsedTimePublisher::count_</a></div><div class="ttdeci">size_t count_</div><div class="ttdef"><b>Definition:</b> <a href="timer__node_8cpp_source.html#l00064">timer_node.cpp:64</a></div></div>
+<div class="ttc" id="aclassElapsedTimePublisher_html_a4befbf3852e66aa15cd141ba5baceb31"><div class="ttname"><a href="classElapsedTimePublisher.html#a4befbf3852e66aa15cd141ba5baceb31">ElapsedTimePublisher::timer_callback</a></div><div class="ttdeci">void timer_callback()</div><div class="ttdef"><b>Definition:</b> <a href="timer__node_8cpp_source.html#l00055">timer_node.cpp:55</a></div></div>
+<div class="ttc" id="aclassElapsedTimePublisher_html_a7dd07c51fb286826602ee2bd72233bc7"><div class="ttname"><a href="classElapsedTimePublisher.html#a7dd07c51fb286826602ee2bd72233bc7">ElapsedTimePublisher::timer_</a></div><div class="ttdeci">rclcpp::TimerBase::SharedPtr timer_</div><div class="ttdef"><b>Definition:</b> <a href="timer__node_8cpp_source.html#l00062">timer_node.cpp:62</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classElapsedTimePublisher.html#a4befbf3852e66aa15cd141ba5baceb31">timer_callback()</a>.</p>
 <div class="dynheader">
@@ -186,13 +186,13 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="timer__node_8cpp_source.html#l00026">26</a> of file <a class="el" href="timer__node_8cpp_source.html">timer_node.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <span class="keyword">auto</span> message = std_msgs::msg::String();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      message.data = std::to_string(<a class="code" href="classElapsedTimePublisher.html#a3aa9b4d72161c7e7bb1443beb5b7009e">count_</a>++);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;&#39;%s&#39; seconds&quot;</span>, message.data.c_str());</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <a class="code" href="classElapsedTimePublisher.html#a294df156baf22f01c70352d60e600ff0">publisher_</a>-&gt;publish(message);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="timer__node_8cpp_source.html#l00055">55</a> of file <a class="el" href="timer__node_8cpp_source.html">timer_node.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keyword">auto</span> message = std_msgs::msg::String();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      message.data = std::to_string(<a class="code" href="classElapsedTimePublisher.html#a3aa9b4d72161c7e7bb1443beb5b7009e">count_</a>++);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;&#39;%s&#39; seconds&quot;</span>, message.data.c_str());</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <a class="code" href="classElapsedTimePublisher.html#a294df156baf22f01c70352d60e600ff0">publisher_</a>-&gt;publish(message);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="classElapsedTimePublisher.html#a122f45a301f211715e29a385a922ec47">ElapsedTimePublisher()</a>.</p>
 <div class="dynheader">
@@ -228,7 +228,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="timer__node_8cpp_source.html#l00035">35</a> of file <a class="el" href="timer__node_8cpp_source.html">timer_node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timer__node_8cpp_source.html#l00064">64</a> of file <a class="el" href="timer__node_8cpp_source.html">timer_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -252,7 +252,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="timer__node_8cpp_source.html#l00034">34</a> of file <a class="el" href="timer__node_8cpp_source.html">timer_node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timer__node_8cpp_source.html#l00063">63</a> of file <a class="el" href="timer__node_8cpp_source.html">timer_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -276,7 +276,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="timer__node_8cpp_source.html#l00033">33</a> of file <a class="el" href="timer__node_8cpp_source.html">timer_node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timer__node_8cpp_source.html#l00062">62</a> of file <a class="el" href="timer__node_8cpp_source.html">timer_node.cpp</a>.</p>
 
 </div>
 </div>
