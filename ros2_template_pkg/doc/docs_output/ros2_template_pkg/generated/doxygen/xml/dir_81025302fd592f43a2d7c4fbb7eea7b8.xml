@@ -4,6 +4,7 @@
     <compoundname>launch</compoundname>
     <innerfile refid="action__launch_8py">action_launch.py</innerfile>
     <innerfile refid="all__launch_8py">all_launch.py</innerfile>
+    <innerfile refid="example__launch_8py">example_launch.py</innerfile>
     <innerfile refid="params__launch_8py">params_launch.py</innerfile>
     <innerfile refid="sequenced__launch_8py">sequenced_launch.py</innerfile>
     <innerfile refid="template__node__launch_8py">template_node_launch.py</innerfile>

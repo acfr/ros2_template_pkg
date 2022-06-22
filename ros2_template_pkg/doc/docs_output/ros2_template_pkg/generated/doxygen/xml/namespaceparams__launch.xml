@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="launch/params_launch.py" line="4" column="1" bodyfile="launch/params_launch.py" bodystart="4" bodyend="16"/>
+        <location file="launch/params_launch.py" line="33" column="1" bodyfile="launch/params_launch.py" bodystart="33" bodyend="45"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

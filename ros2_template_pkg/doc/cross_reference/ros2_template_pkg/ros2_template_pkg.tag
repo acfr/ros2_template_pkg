@@ -139,6 +139,11 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>LICENSE.md</name>
+    <path>/home/jerome/dev_ws/src/ros2_template_pkg/ros2_template_pkg/doc/docs_output/ros2_template_pkg/_static/collapsible-lists/</path>
+    <filename>LICENSE_8md.html</filename>
+  </compound>
+  <compound kind="file">
     <name>ros2_template_node.hpp</name>
     <path>/home/jerome/dev_ws/src/ros2_template_pkg/ros2_template_pkg/include/ros2_template_pkg/</path>
     <filename>ros2__template__node_8hpp.html</filename>
@@ -182,6 +187,19 @@
       <anchorfile>namespaceall__launch.html</anchorfile>
       <anchor>ae678bdf16f781f65328eb0a43021c90c</anchor>
       <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>example_launch.py</name>
+    <path>/home/jerome/dev_ws/src/ros2_template_pkg/ros2_template_pkg/launch/</path>
+    <filename>example__launch_8py.html</filename>
+    <namespace>example_launch</namespace>
+    <member kind="function">
+      <type>def</type>
+      <name>generate_launch_description</name>
+      <anchorfile>namespaceexample__launch.html</anchorfile>
+      <anchor>af49d150abaa0c5580b32932333d2f2c8</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -852,6 +870,17 @@
     </member>
   </compound>
   <compound kind="namespace">
+    <name>example_launch</name>
+    <filename>namespaceexample__launch.html</filename>
+    <member kind="function">
+      <type>def</type>
+      <name>generate_launch_description</name>
+      <anchorfile>namespaceexample__launch.html</anchorfile>
+      <anchor>af49d150abaa0c5580b32932333d2f2c8</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
     <name>params_launch</name>
     <filename>namespaceparams__launch.html</filename>
     <member kind="function">
@@ -894,5 +923,10 @@
       <anchor>af75f51023321cf03af4a47213f754924</anchor>
       <arglist></arglist>
     </member>
+  </compound>
+  <compound kind="page">
+    <name>md_doc_docs_output_ros2_template_pkg__static_collapsible_lists_LICENSE</name>
+    <title>LICENSE</title>
+    <filename>md_doc_docs_output_ros2_template_pkg__static_collapsible_lists_LICENSE.html</filename>
   </compound>
 </tagfile>
