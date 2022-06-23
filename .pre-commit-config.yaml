@@ -1,0 +1,24 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    -   id: check-yaml
+    -   id: trailing-whitespace
+    -   id: check-xml
+
+-   repo: https://github.com/comkieffer/xml-linter-hook
+        rev: 1.0.0
+    hooks:
+    -   id: xmllint
+
+-   repo: https://github.com/PyCQA/isort
+    rev: 5.10.1
+    hooks:
+    -   id: isort
+
+-   repo: https://github.com/pocc/pre-commit-hooks
+    rev: master
+    hooks:
+    -   id: uncrustify
+    -   id: cppcheck
+    -   id: cpplint
