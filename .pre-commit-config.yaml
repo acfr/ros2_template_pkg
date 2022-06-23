@@ -7,7 +7,7 @@ repos:
     -   id: check-xml
 
 -   repo: https://github.com/comkieffer/xml-linter-hook
-        rev: 1.0.0
+    rev: 1.0.0
     hooks:
     -   id: xmllint
 
