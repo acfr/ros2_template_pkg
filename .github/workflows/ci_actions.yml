@@ -15,8 +15,7 @@ jobs:
         sudo apt-get update
         sudo apt-get upgrade -y
         sudo apt install udev
-        sudo apt install libudev-dev
-        sudo apt install -f
+        sudo apt install libudev1
     - name: Setup ROS 2
       uses: ros-tooling/setup-ros@v0.3
       with:
