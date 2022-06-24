@@ -10,14 +10,18 @@ jobs:
   build-and-test:
     runs-on: ubuntu-22.04
     steps:
+    - name: Update udev deps
+      run:
+        sudo apt-get update
+        sudo apt -get upgrade -y
     - name: Setup ROS 2
       uses: ros-tooling/setup-ros@v0.3
-      with: 
+      with:
         required-ros-distributions: humble
-      
+
     - name: Run Tests
       uses: ros-tooling/action-ros-ci@v0.2
-      with: 
+      with:
         target-ros2-distro: humble
         package-name: ros2_template_pkg
 
