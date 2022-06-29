@@ -11,6 +11,9 @@ It has the following all setup
   - Simple unit test template
   - Documentation template
 
+## Build Status
+[![Test Template](https://github.com/acfr/ros2_template_pkg/actions/workflows/ci_actions.yml/badge.svg)](https://github.com/acfr/ros2_template_pkg/actions/workflows/ci_actions.yml)
+
 ## How to build
 ### Prerequisites
 - Ubuntu 22.04 
