@@ -10,13 +10,6 @@ jobs:
   build-and-test:
     runs-on: ubuntu-22.04
     steps:
-    - name: Update udev deps
-      run: |
-        sudo apt-get update
-        sudo apt-get upgrade -y
-        sudo apt install udev
-        sudo apt install libudev-dev
-        sudo apt install -f
     - name: Setup ROS 2
       uses: ros-tooling/setup-ros@v0.3
       with:

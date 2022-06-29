@@ -47,7 +47,7 @@ $<INSTALL_INTERFACE:include>)
 
 target_compile_features(ros2_template_node PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 
-install(TARGETS 
+install(TARGETS
   ros2_template_node
   parameters
   talker
@@ -67,13 +67,10 @@ if(BUILD_TESTING)
   find_package(ament_cmake_xmllint REQUIRED)
   find_package(ament_cmake_uncrustify REQUIRED)
   find_package(ament_cmake_cpplint REQUIRED)
-  
-  set(_linter_excludes ./extern/googletest)
-  set(_copywrite_excludes ./doc)
-  
-  # ament_uncrustify()
-  # ament_lint_cmake()
-  # ament_cpplint()
+
+  ament_uncrustify()
+  ament_lint_cmake()
+  ament_cpplint()
   ament_cppcheck()
   ament_xmllint()
   ament_copyright()
@@ -81,7 +78,7 @@ if(BUILD_TESTING)
   find_package(ament_cmake_gtest REQUIRED)
   # Add a gtest named ${PROJECT_NAME}
   ament_add_gtest(${PROJECT_NAME} test/test_ros2_template_node.cpp)
-  
+
 endif()
 
 #this must be added so launch files can be used from CLI
