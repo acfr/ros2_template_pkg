@@ -1,2 +1,4 @@
 ros2_template_pkg/extern/*
 acfr_ros2_interfaces/
+ros2_template_pkg/doc/cross_reference
+ros2_template_pkg/doc/docs_build
