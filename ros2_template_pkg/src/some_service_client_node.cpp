@@ -27,12 +27,12 @@
 // POSSIBILITY OF SUCH DAMAGE.
 
 
-#include "rclcpp/rclcpp.hpp"
-#include "acfr_ros2_interfaces/srv/add_two_ints.hpp"  
-
 #include <chrono>
 #include <cstdlib>
 #include <memory>
+
+#include "rclcpp/rclcpp.hpp"
+#include "acfr_ros2_interfaces/srv/add_two_ints.hpp"
 
 using namespace std::chrono_literals;
 
@@ -55,7 +55,8 @@ int main(int argc, char **argv)
 
   while (!client->wait_for_service(1s)) {
     if (!rclcpp::ok()) {
-      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Interrupted while waiting for the service. Exiting.");
+      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"),
+                   "Interrupted while waiting for the service. Exiting.");
       return 0;
     }
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "service not available, waiting again...");

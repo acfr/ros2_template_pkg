@@ -16,9 +16,9 @@ repos:
     hooks:
     -   id: isort
 
--   repo: https://github.com/pocc/pre-commit-hooks
-    rev: v1.3.5
-    hooks:
-    -   id: uncrustify
-    -   id: cppcheck
-    -   id: cpplint
+# -   repo: https://github.com/pocc/pre-commit-hooks
+#     rev: v1.3.5
+#     hooks:
+#     -   id: uncrustify
+#     -   id: cppcheck
+#     -   id: cpplint

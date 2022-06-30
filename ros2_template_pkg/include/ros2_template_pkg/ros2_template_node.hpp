@@ -40,20 +40,20 @@
 class RosTemplateNode {
    public:
       /**
-       * \brief   The contructore of RosTemplateNode. 
+       * \brief   The contructore of RosTemplateNode.
        *
        */
       RosTemplateNode();
 
       /**
-       * \brief   The contructore of RosTemplateNode. 
+       * \brief   The contructore of RosTemplateNode.
        *
        */
       ~RosTemplateNode();
 
 
       /**
-       * \brief   The function print. 
+       * \brief   The function print.
        *
        * \details This function does takes in std string and prints it using iostream to the console
        *
@@ -70,9 +70,9 @@ class RosTemplateNode {
 
 
       /**
-       * \brief   The function addTwoints. 
+       * \brief   The function addTwoints.
        *
-       * \details This function adds two ints together. This is not very useful. Just showcasing how to write 
+       * \details This function adds two ints together. This is not very useful. Just showcasing how to write
                   Doxygen comments
       *
       * \note    Note that the the sum variable is written to by reference and the function always returns true
@@ -89,4 +89,4 @@ class RosTemplateNode {
       bool addTwoInts(int a, int b, int &sum);
 };
 
-#endif //ROS2_TEMPLATE_PKG__ROS2_TEMPLATE_NODE_HPP_
+#endif  // ROS2_TEMPLATE_PKG__ROS2_TEMPLATE_NODE_HPP_

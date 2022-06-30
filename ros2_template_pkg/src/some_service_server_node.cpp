@@ -26,11 +26,10 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 // POSSIBILITY OF SUCH DAMAGE.
 
+#include <memory>
 
 #include "rclcpp/rclcpp.hpp"
 #include "acfr_ros2_interfaces/srv/add_two_ints.hpp"
-
-#include <memory>
 
 void add(const std::shared_ptr<acfr_ros2_interfaces::srv::AddTwoInts::Request> request,
           std::shared_ptr<acfr_ros2_interfaces::srv::AddTwoInts::Response>      response)
@@ -38,7 +37,8 @@ void add(const std::shared_ptr<acfr_ros2_interfaces::srv::AddTwoInts::Request> r
   response->sum = request->a + request->b;
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Incoming request\na: %ld" " b: %ld",
                 request->a, request->b);
-  RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "sending back response: [%ld]", (long int)response->sum);
+  RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "sending back response: [%ld]",
+              (int32)response->sum);
 }
 
 int main(int argc, char **argv)
