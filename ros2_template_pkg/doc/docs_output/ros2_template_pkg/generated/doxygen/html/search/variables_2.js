@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['client_5fptr_5f_149',['client_ptr_',['../classMinimalActionClient.html#a4889d414d70a531dbdaae80866b8d89f',1,'MinimalActionClient']]],
-  ['copyright_150',['copyright',['../namespaceconf.html#a33fa97cf51dcb25970fbf53f10159589',1,'conf']]],
-  ['count_5f_151',['count_',['../classMinimalPublisher.html#a896abc7d57397667e774d4db7ae44ffe',1,'MinimalPublisher::count_()'],['../classElapsedTimePublisher.html#a3aa9b4d72161c7e7bb1443beb5b7009e',1,'ElapsedTimePublisher::count_()']]]
+  ['env_5fvar_5fname_126',['env_var_name',['../namespaceaction__launch.html#a479ad1d2f38108dffc19095aa12078ec',1,'action_launch.env_var_name()'],['../namespaceall__launch.html#ae678bdf16f781f65328eb0a43021c90c',1,'all_launch.env_var_name()'],['../namespacetemplate__node__launch.html#af75f51023321cf03af4a47213f754924',1,'template_node_launch.env_var_name()']]]
 ];

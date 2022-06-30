@@ -56,7 +56,7 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
+<iframe src="javascript:void(0)" frameborder="0"
         name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
@@ -73,22 +73,22 @@ $(function() {
 <div class="title">some_service_client_node.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;rclcpp/rclcpp.hpp&quot;</code><br />
-<code>#include &quot;acfr_ros2_interfaces/srv/add_two_ints.hpp&quot;</code><br />
-<code>#include &lt;chrono&gt;</code><br />
+<div class="textblock"><code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>#include &quot;rclcpp/rclcpp.hpp&quot;</code><br />
+<code>#include &quot;acfr_ros2_interfaces/srv/add_two_ints.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for some_service_client_node.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="some__service__client__node_8cpp__incl.png" border="0" usemap="#asrc_2some__service__client__node_8cpp" alt=""/></div>
 <map name="asrc_2some__service__client__node_8cpp" id="asrc_2some__service__client__node_8cpp">
-<area shape="rect" title=" " alt="" coords="294,5,473,47"/>
-<area shape="rect" title=" " alt="" coords="5,102,137,129"/>
-<area shape="rect" title=" " alt="" coords="161,95,325,136"/>
-<area shape="rect" title=" " alt="" coords="350,102,417,129"/>
-<area shape="rect" title=" " alt="" coords="441,102,507,129"/>
-<area shape="rect" title=" " alt="" coords="531,102,609,129"/>
+<area shape="rect" title=" " alt="" coords="136,5,315,47"/>
+<area shape="rect" title=" " alt="" coords="5,102,72,129"/>
+<area shape="rect" title=" " alt="" coords="97,102,162,129"/>
+<area shape="rect" title=" " alt="" coords="187,102,264,129"/>
+<area shape="rect" title=" " alt="" coords="289,102,421,129"/>
+<area shape="rect" title=" " alt="" coords="445,95,609,136"/>
 </map>
 </div>
 </div>
@@ -145,25 +145,26 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">while</span> (!client-&gt;wait_for_service(1s)) {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> (!rclcpp::ok()) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      RCLCPP_ERROR(rclcpp::get_logger(<span class="stringliteral">&quot;rclcpp&quot;</span>), <span class="stringliteral">&quot;Interrupted while waiting for the service. Exiting.&quot;</span>);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    RCLCPP_INFO(rclcpp::get_logger(<span class="stringliteral">&quot;rclcpp&quot;</span>), <span class="stringliteral">&quot;service not available, waiting again...&quot;</span>);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">auto</span> result = client-&gt;async_send_request(request);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="comment">// Wait for the result.</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordflow">if</span> (rclcpp::spin_until_future_complete(node, result) ==</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    rclcpp::FutureReturnCode::SUCCESS)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    RCLCPP_INFO(rclcpp::get_logger(<span class="stringliteral">&quot;rclcpp&quot;</span>), <span class="stringliteral">&quot;Sum: %ld&quot;</span>, result.get()-&gt;sum);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    RCLCPP_ERROR(rclcpp::get_logger(<span class="stringliteral">&quot;rclcpp&quot;</span>), <span class="stringliteral">&quot;Failed to call service add_two_ints&quot;</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  rclcpp::shutdown();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      RCLCPP_ERROR(rclcpp::get_logger(<span class="stringliteral">&quot;rclcpp&quot;</span>),</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                   <span class="stringliteral">&quot;Interrupted while waiting for the service. Exiting.&quot;</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    RCLCPP_INFO(rclcpp::get_logger(<span class="stringliteral">&quot;rclcpp&quot;</span>), <span class="stringliteral">&quot;service not available, waiting again...&quot;</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">auto</span> result = client-&gt;async_send_request(request);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="comment">// Wait for the result.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">if</span> (rclcpp::spin_until_future_complete(node, result) ==</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    rclcpp::FutureReturnCode::SUCCESS)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    RCLCPP_INFO(rclcpp::get_logger(<span class="stringliteral">&quot;rclcpp&quot;</span>), <span class="stringliteral">&quot;Sum: %ld&quot;</span>, result.get()-&gt;sum);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    RCLCPP_ERROR(rclcpp::get_logger(<span class="stringliteral">&quot;rclcpp&quot;</span>), <span class="stringliteral">&quot;Failed to call service add_two_ints&quot;</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  rclcpp::shutdown();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>

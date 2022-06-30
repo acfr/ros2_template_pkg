@@ -2,25 +2,25 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="some__service__client__node_8cpp" kind="file" language="C++">
     <compoundname>some_service_client_node.cpp</compoundname>
-    <includes local="yes">rclcpp/rclcpp.hpp</includes>
-    <includes local="yes">acfr_ros2_interfaces/srv/add_two_ints.hpp</includes>
     <includes local="no">chrono</includes>
     <includes local="no">cstdlib</includes>
     <includes local="no">memory</includes>
+    <includes local="yes">rclcpp/rclcpp.hpp</includes>
+    <includes local="yes">acfr_ros2_interfaces/srv/add_two_ints.hpp</includes>
     <incdepgraph>
-      <node id="2">
+      <node id="5">
         <label>rclcpp/rclcpp.hpp</label>
       </node>
-      <node id="5">
+      <node id="3">
         <label>cstdlib</label>
       </node>
-      <node id="4">
+      <node id="2">
         <label>chrono</label>
       </node>
-      <node id="3">
+      <node id="6">
         <label>acfr_ros2_interfaces/srv/add_two_ints.hpp</label>
       </node>
-      <node id="6">
+      <node id="4">
         <label>memory</label>
       </node>
       <node id="1">
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/some_service_client_node.cpp" line="39" column="5" bodyfile="src/some_service_client_node.cpp" bodystart="39" bodyend="76"/>
+        <location file="src/some_service_client_node.cpp" line="39" column="5" bodyfile="src/some_service_client_node.cpp" bodystart="39" bodyend="77"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -95,12 +95,12 @@
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rclcpp/rclcpp.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;acfr_ros2_interfaces/srv/add_two_ints.hpp&quot;</highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rclcpp/rclcpp.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;acfr_ros2_interfaces/srv/add_two_ints.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std::chrono_literals;</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
@@ -123,25 +123,26 @@
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!client-&gt;wait_for_service(1s))<sp/>{</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!rclcpp::ok())<sp/>{</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>RCLCPP_ERROR(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Interrupted<sp/>while<sp/>waiting<sp/>for<sp/>the<sp/>service.<sp/>Exiting.&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>RCLCPP_INFO(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;service<sp/>not<sp/>available,<sp/>waiting<sp/>again...&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>client-&gt;async_send_request(request);</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Wait<sp/>for<sp/>the<sp/>result.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rclcpp::spin_until_future_complete(node,<sp/>result)<sp/>==</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::FutureReturnCode::SUCCESS)</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>RCLCPP_INFO(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Sum:<sp/>%ld&quot;</highlight><highlight class="normal">,<sp/>result.get()-&gt;sum);</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>RCLCPP_ERROR(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>call<sp/>service<sp/>add_two_ints&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/>rclcpp::shutdown();</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
-<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>RCLCPP_ERROR(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Interrupted<sp/>while<sp/>waiting<sp/>for<sp/>the<sp/>service.<sp/>Exiting.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>RCLCPP_INFO(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;service<sp/>not<sp/>available,<sp/>waiting<sp/>again...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>client-&gt;async_send_request(request);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Wait<sp/>for<sp/>the<sp/>result.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rclcpp::spin_until_future_complete(node,<sp/>result)<sp/>==</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::FutureReturnCode::SUCCESS)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>RCLCPP_INFO(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Sum:<sp/>%ld&quot;</highlight><highlight class="normal">,<sp/>result.get()-&gt;sum);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>RCLCPP_ERROR(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>call<sp/>service<sp/>add_two_ints&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>rclcpp::shutdown();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="src/some_service_client_node.cpp"/>
   </compounddef>
