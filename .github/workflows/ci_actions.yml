@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - ament_lint
+      - master
 
 jobs:
   build-and-test:
