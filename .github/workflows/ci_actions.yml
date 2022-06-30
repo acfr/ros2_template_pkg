@@ -4,6 +4,7 @@ on:
   pull_request:
   push:
     branches:
+      - ament_lint
       - master
 
 jobs:
