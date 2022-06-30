@@ -38,7 +38,7 @@ void add(const std::shared_ptr<acfr_ros2_interfaces::srv::AddTwoInts::Request> r
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Incoming request\na: %ld" " b: %ld",
                 request->a, request->b);
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "sending back response: [%ld]",
-              (int32)response->sum);
+              (long int)response->sum);
 }
 
 int main(int argc, char **argv)
