@@ -70,7 +70,7 @@ if(BUILD_TESTING)
 
   ament_uncrustify()
   ament_lint_cmake()
-  ament_cpplint()
+  ament_cpplint(FILTERS -runtime/int)
   ament_cppcheck()
   ament_xmllint()
   ament_copyright()
