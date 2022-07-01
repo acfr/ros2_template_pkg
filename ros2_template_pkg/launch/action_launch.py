@@ -47,5 +47,5 @@ def generate_launch_description():
             name=[launch.substitutions.LaunchConfiguration('node_prefix'), 'action_server']),
         launch_ros.actions.Node(
             package='ros2_template_pkg', executable='action_client', output='screen',
-            name=[launch.substitutions.LaunchConfiguration('node_prefix'), 'action_client'])         
+            name=[launch.substitutions.LaunchConfiguration('node_prefix'), 'action_client'])
     ])
