@@ -60,27 +60,26 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
-
-  file(GLOB _all_non_vendor_files *)
-  list(REMOVE_ITEM _all_non_vendor_files ${PROJECT_SOURCE_DIR}/vendor)
-
-  find_package(ament_cmake_copyright REQUIRED)
-  ament_copyright()
-
-  find_package(ament_cmake_cppcheck REQUIRED)
-  ament_cppcheck()
-
   find_package(ament_cmake_cpplint REQUIRED)
-  ament_cpplint(FILTERS '-runtime/int')
+  set(cpplint_exclude_dirs extern/googletest/googletest/test/*.cc)
 
-  find_package(ament_cmake_lint_cmake REQUIRED)
-  ament_lint_cmake()
+  ament_cpplint(FILTERS -runtime/int)
 
-  find_package(ament_cmake_xmllint REQUIRED)
-  ament_xmllint()
+  # find_package(ament_cmake_copyright REQUIRED)
+  # ament_copyright()
 
-  find_package(ament_cmake_gtest REQUIRED)
-  ament_add_gtest(${PROJECT_NAME} test/test_ros2_template_node.cpp)
+  # find_package(ament_cmake_cppcheck REQUIRED)
+  # ament_cppcheck()
+
+
+  # find_package(ament_cmake_lint_cmake REQUIRED)
+  # ament_lint_cmake()
+
+  # find_package(ament_cmake_xmllint REQUIRED)
+  # ament_xmllint()
+
+  # find_package(ament_cmake_gtest REQUIRED)
+  # ament_add_gtest(${PROJECT_NAME} test/test_ros2_template_node.cpp)
 
 endif()
 
