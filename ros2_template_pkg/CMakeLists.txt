@@ -60,9 +60,8 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
-  find_package(ament_cmake_cpplint REQUIRED)
-  set(cpplint_exclude_dirs extern/googletest/googletest/test/*.cc)
 
+  find_package(ament_cmake_cpplint REQUIRED)
   ament_cpplint(FILTERS -runtime/int)
 
   # find_package(ament_cmake_copyright REQUIRED)
