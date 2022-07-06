@@ -2,11 +2,11 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="some__service__server__node_8cpp" kind="file" language="C++">
     <compoundname>some_service_server_node.cpp</compoundname>
+    <includes local="no">memory</includes>
     <includes local="yes">rclcpp/rclcpp.hpp</includes>
     <includes local="yes">acfr_ros2_interfaces/srv/add_two_ints.hpp</includes>
-    <includes local="no">memory</includes>
     <incdepgraph>
-      <node id="2">
+      <node id="3">
         <label>rclcpp/rclcpp.hpp</label>
       </node>
       <node id="1">
@@ -19,10 +19,10 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="3">
+      <node id="4">
         <label>acfr_ros2_interfaces/srv/add_two_ints.hpp</label>
       </node>
-      <node id="4">
+      <node id="2">
         <label>memory</label>
       </node>
     </incdepgraph>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/some_service_server_node.cpp" line="35" column="6" bodyfile="src/some_service_server_node.cpp" bodystart="35" bodyend="42"/>
+        <location file="src/some_service_server_node.cpp" line="34" column="6" bodyfile="src/some_service_server_node.cpp" bodystart="34" bodyend="42"/>
         <referencedby refid="some__service__server__node_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="some__service__server__node_8cpp" startline="44" endline="57">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="some__service__server__node_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -69,7 +69,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="src/some_service_server_node.cpp" line="44" column="5" bodyfile="src/some_service_server_node.cpp" bodystart="44" bodyend="57"/>
-        <references refid="some__service__server__node_8cpp_1a5fd8f22de7230ec0bc94802eb217b880" compoundref="some__service__server__node_8cpp" startline="35" endline="42">add</references>
+        <references refid="some__service__server__node_8cpp_1a5fd8f22de7230ec0bc94802eb217b880" compoundref="some__service__server__node_8cpp" startline="34" endline="42">add</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -105,19 +105,19 @@
 <codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rclcpp/rclcpp.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;acfr_ros2_interfaces/srv/add_two_ints.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35" refid="some__service__server__node_8cpp_1a5fd8f22de7230ec0bc94802eb217b880" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="some__service__server__node_8cpp_1a5fd8f22de7230ec0bc94802eb217b880" kindref="member">add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;acfr_ros2_interfaces::srv::AddTwoInts::Request&gt;<sp/>request,</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;acfr_ros2_interfaces::srv::AddTwoInts::Response&gt;<sp/><sp/><sp/><sp/><sp/><sp/>response)</highlight></codeline>
-<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/>response-&gt;sum<sp/>=<sp/>request-&gt;a<sp/>+<sp/>request-&gt;b;</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/>RCLCPP_INFO(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Incoming<sp/>request\na:<sp/>%ld&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;<sp/>b:<sp/>%ld&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>request-&gt;a,<sp/>request-&gt;b);</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/>RCLCPP_INFO(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;sending<sp/>back<sp/>response:<sp/>[%ld]&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)response-&gt;sum);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rclcpp/rclcpp.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;acfr_ros2_interfaces/srv/add_two_ints.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="some__service__server__node_8cpp_1a5fd8f22de7230ec0bc94802eb217b880" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="some__service__server__node_8cpp_1a5fd8f22de7230ec0bc94802eb217b880" kindref="member">add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;acfr_ros2_interfaces::srv::AddTwoInts::Request&gt;<sp/>request,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;acfr_ros2_interfaces::srv::AddTwoInts::Response&gt;<sp/><sp/><sp/><sp/><sp/><sp/>response)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>response-&gt;sum<sp/>=<sp/>request-&gt;a<sp/>+<sp/>request-&gt;b;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>RCLCPP_INFO(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Incoming<sp/>request\na:<sp/>%ld&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;<sp/>b:<sp/>%ld&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>request-&gt;a,<sp/>request-&gt;b);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>RCLCPP_INFO(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;sending<sp/>back<sp/>response:<sp/>[%ld]&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)response-&gt;sum);</highlight></codeline>
 <codeline lineno="42"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
 <codeline lineno="44" refid="some__service__server__node_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="some__service__server__node_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv)</highlight></codeline>

@@ -56,7 +56,7 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
+<iframe src="javascript:void(0)" frameborder="0"
         name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
@@ -99,19 +99,19 @@ $(function() {
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// POSSIBILITY OF SUCH DAMAGE.</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;rclcpp/rclcpp.hpp&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;acfr_ros2_interfaces/srv/add_two_ints.hpp&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="some__service__server__node_8cpp.html#a5fd8f22de7230ec0bc94802eb217b880">   35</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="some__service__server__node_8cpp.html#a5fd8f22de7230ec0bc94802eb217b880">add</a>(<span class="keyword">const</span> std::shared_ptr&lt;acfr_ros2_interfaces::srv::AddTwoInts::Request&gt; request,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;          std::shared_ptr&lt;acfr_ros2_interfaces::srv::AddTwoInts::Response&gt;      response)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  response-&gt;sum = request-&gt;a + request-&gt;b;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  RCLCPP_INFO(rclcpp::get_logger(<span class="stringliteral">&quot;rclcpp&quot;</span>), <span class="stringliteral">&quot;Incoming request\na: %ld&quot;</span> <span class="stringliteral">&quot; b: %ld&quot;</span>,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                request-&gt;a, request-&gt;b);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  RCLCPP_INFO(rclcpp::get_logger(<span class="stringliteral">&quot;rclcpp&quot;</span>), <span class="stringliteral">&quot;sending back response: [%ld]&quot;</span>, (<span class="keywordtype">long</span> <span class="keywordtype">int</span>)response-&gt;sum);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;rclcpp/rclcpp.hpp&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;acfr_ros2_interfaces/srv/add_two_ints.hpp&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="some__service__server__node_8cpp.html#a5fd8f22de7230ec0bc94802eb217b880">   34</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="some__service__server__node_8cpp.html#a5fd8f22de7230ec0bc94802eb217b880">add</a>(<span class="keyword">const</span> std::shared_ptr&lt;acfr_ros2_interfaces::srv::AddTwoInts::Request&gt; request,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;          std::shared_ptr&lt;acfr_ros2_interfaces::srv::AddTwoInts::Response&gt;      response)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  response-&gt;sum = request-&gt;a + request-&gt;b;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  RCLCPP_INFO(rclcpp::get_logger(<span class="stringliteral">&quot;rclcpp&quot;</span>), <span class="stringliteral">&quot;Incoming request\na: %ld&quot;</span> <span class="stringliteral">&quot; b: %ld&quot;</span>,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                request-&gt;a, request-&gt;b);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  RCLCPP_INFO(rclcpp::get_logger(<span class="stringliteral">&quot;rclcpp&quot;</span>), <span class="stringliteral">&quot;sending back response: [%ld]&quot;</span>,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;              (<span class="keywordtype">long</span> <span class="keywordtype">int</span>)response-&gt;sum);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="some__service__server__node_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">   44</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="some__service__server__node_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv)</div>
@@ -129,7 +129,7 @@ $(function() {
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  rclcpp::shutdown();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 <div class="ttc" id="asome__service__server__node_8cpp_html_a3c04138a5bfe5d72780bb7e82a18e627"><div class="ttname"><a href="some__service__server__node_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a></div><div class="ttdeci">int main(int argc, char **argv)</div><div class="ttdef"><b>Definition:</b> <a href="some__service__server__node_8cpp_source.html#l00044">some_service_server_node.cpp:44</a></div></div>
-<div class="ttc" id="asome__service__server__node_8cpp_html_a5fd8f22de7230ec0bc94802eb217b880"><div class="ttname"><a href="some__service__server__node_8cpp.html#a5fd8f22de7230ec0bc94802eb217b880">add</a></div><div class="ttdeci">void add(const std::shared_ptr&lt; acfr_ros2_interfaces::srv::AddTwoInts::Request &gt; request, std::shared_ptr&lt; acfr_ros2_interfaces::srv::AddTwoInts::Response &gt; response)</div><div class="ttdef"><b>Definition:</b> <a href="some__service__server__node_8cpp_source.html#l00035">some_service_server_node.cpp:35</a></div></div>
+<div class="ttc" id="asome__service__server__node_8cpp_html_a5fd8f22de7230ec0bc94802eb217b880"><div class="ttname"><a href="some__service__server__node_8cpp.html#a5fd8f22de7230ec0bc94802eb217b880">add</a></div><div class="ttdeci">void add(const std::shared_ptr&lt; acfr_ros2_interfaces::srv::AddTwoInts::Request &gt; request, std::shared_ptr&lt; acfr_ros2_interfaces::srv::AddTwoInts::Response &gt; response)</div><div class="ttdef"><b>Definition:</b> <a href="some__service__server__node_8cpp_source.html#l00034">some_service_server_node.cpp:34</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -61,22 +61,25 @@ install(TARGETS
 
 if(BUILD_TESTING)
 
-  find_package(ament_cmake_cppcheck REQUIRED)
-  find_package(ament_cmake_copyright REQUIRED)
-  find_package(ament_cmake_lint_cmake REQUIRED)
-  find_package(ament_cmake_xmllint REQUIRED)
-  find_package(ament_cmake_uncrustify REQUIRED)
-  find_package(ament_cmake_cpplint REQUIRED)
+  file(GLOB _all_non_vendor_files *)
+  list(REMOVE_ITEM _all_non_vendor_files ${PROJECT_SOURCE_DIR}/vendor)
 
-  ament_uncrustify()
-  ament_lint_cmake()
-  ament_cpplint()
-  ament_cppcheck()
-  ament_xmllint()
+  find_package(ament_cmake_copyright REQUIRED)
   ament_copyright()
 
+  find_package(ament_cmake_cppcheck REQUIRED)
+  ament_cppcheck()
+
+  find_package(ament_cmake_cpplint REQUIRED)
+  ament_cpplint(FILTERS '-runtime/int')
+
+  find_package(ament_cmake_lint_cmake REQUIRED)
+  ament_lint_cmake()
+
+  find_package(ament_cmake_xmllint REQUIRED)
+  ament_xmllint()
+
   find_package(ament_cmake_gtest REQUIRED)
-  # Add a gtest named ${PROJECT_NAME}
   ament_add_gtest(${PROJECT_NAME} test/test_ros2_template_node.cpp)
 
 endif()

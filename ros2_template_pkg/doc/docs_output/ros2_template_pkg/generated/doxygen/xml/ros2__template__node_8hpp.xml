@@ -88,7 +88,7 @@
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classRosTemplateNode_1ac160453a164c3be37134fefd31562c3b" kindref="member">addTwoInts</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;sum);</highlight></codeline>
 <codeline lineno="90"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//ROS2_TEMPLATE_PKG__ROS2_TEMPLATE_NODE_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>ROS2_TEMPLATE_PKG__ROS2_TEMPLATE_NODE_HPP_</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="include/ros2_template_pkg/ros2_template_node.hpp"/>
   </compounddef>

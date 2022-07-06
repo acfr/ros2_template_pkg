@@ -31,12 +31,10 @@
 
 RosTemplateNode::RosTemplateNode()
 {
-
 }
 
 RosTemplateNode::~RosTemplateNode()
 {
-
 }
 
 void RosTemplateNode::print(std::string message)

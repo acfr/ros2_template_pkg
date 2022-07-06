@@ -25,13 +25,11 @@
 // CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 // POSSIBILITY OF SUCH DAMAGE.
-
-
-#include <rclcpp/rclcpp.hpp>
-
 #include <chrono>
 #include <string>
 #include <functional>
+
+#include <rclcpp/rclcpp.hpp>
 
 using namespace std::chrono_literals;
 

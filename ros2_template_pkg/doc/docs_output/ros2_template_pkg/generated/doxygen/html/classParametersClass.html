@@ -56,7 +56,7 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
+<iframe src="javascript:void(0)" frameborder="0"
         name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
@@ -106,7 +106,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="parameters__node_8cpp_source.html#l00038">38</a> of file <a class="el" href="parameters__node_8cpp_source.html">parameters_node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="parameters__node_8cpp_source.html#l00036">36</a> of file <a class="el" href="parameters__node_8cpp_source.html">parameters_node.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0aa39a8fcc810d415c444f395dcc430c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0aa39a8fcc810d415c444f395dcc430c">&#9670;&nbsp;</a></span>ParametersClass()</h2>
@@ -131,16 +131,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="parameters__node_8cpp_source.html#l00041">41</a> of file <a class="el" href="parameters__node_8cpp_source.html">parameters_node.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      : Node(<span class="stringliteral">&quot;parameter_node&quot;</span>)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      this-&gt;declare_parameter&lt;std::string&gt;(<span class="stringliteral">&quot;my_parameter&quot;</span>, <span class="stringliteral">&quot;world&quot;</span>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <a class="code" href="classParametersClass.html#a404be404daa0e19463e29bb3a7672f56">timer_</a> = this-&gt;create_wall_timer(</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      1000ms, std::bind(&amp;<a class="code" href="classParametersClass.html#af99751b872964babe61cc91af219ffbd">ParametersClass::respond</a>, <span class="keyword">this</span>));</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
-<div class="ttc" id="aclassParametersClass_html_a404be404daa0e19463e29bb3a7672f56"><div class="ttname"><a href="classParametersClass.html#a404be404daa0e19463e29bb3a7672f56">ParametersClass::timer_</a></div><div class="ttdeci">rclcpp::TimerBase::SharedPtr timer_</div><div class="ttdef"><b>Definition:</b> <a href="parameters__node_8cpp_source.html#l00057">parameters_node.cpp:57</a></div></div>
-<div class="ttc" id="aclassParametersClass_html_af99751b872964babe61cc91af219ffbd"><div class="ttname"><a href="classParametersClass.html#af99751b872964babe61cc91af219ffbd">ParametersClass::respond</a></div><div class="ttdeci">void respond()</div><div class="ttdef"><b>Definition:</b> <a href="parameters__node_8cpp_source.html#l00049">parameters_node.cpp:49</a></div></div>
+<p class="definition">Definition at line <a class="el" href="parameters__node_8cpp_source.html#l00039">39</a> of file <a class="el" href="parameters__node_8cpp_source.html">parameters_node.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      : Node(<span class="stringliteral">&quot;parameter_node&quot;</span>)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      this-&gt;declare_parameter&lt;std::string&gt;(<span class="stringliteral">&quot;my_parameter&quot;</span>, <span class="stringliteral">&quot;world&quot;</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <a class="code" href="classParametersClass.html#a404be404daa0e19463e29bb3a7672f56">timer_</a> = this-&gt;create_wall_timer(</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      1000ms, std::bind(&amp;<a class="code" href="classParametersClass.html#af99751b872964babe61cc91af219ffbd">ParametersClass::respond</a>, <span class="keyword">this</span>));</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="ttc" id="aclassParametersClass_html_a404be404daa0e19463e29bb3a7672f56"><div class="ttname"><a href="classParametersClass.html#a404be404daa0e19463e29bb3a7672f56">ParametersClass::timer_</a></div><div class="ttdeci">rclcpp::TimerBase::SharedPtr timer_</div><div class="ttdef"><b>Definition:</b> <a href="parameters__node_8cpp_source.html#l00055">parameters_node.cpp:55</a></div></div>
+<div class="ttc" id="aclassParametersClass_html_af99751b872964babe61cc91af219ffbd"><div class="ttname"><a href="classParametersClass.html#af99751b872964babe61cc91af219ffbd">ParametersClass::respond</a></div><div class="ttdeci">void respond()</div><div class="ttdef"><b>Definition:</b> <a href="parameters__node_8cpp_source.html#l00047">parameters_node.cpp:47</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classParametersClass.html#af99751b872964babe61cc91af219ffbd">respond()</a>.</p>
 <div class="dynheader">
@@ -179,13 +179,13 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="parameters__node_8cpp_source.html#l00049">49</a> of file <a class="el" href="parameters__node_8cpp_source.html">parameters_node.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      this-&gt;get_parameter(<span class="stringliteral">&quot;my_parameter&quot;</span>, <a class="code" href="classParametersClass.html#a67a8aeaca8ff8179fc664ee29d8f1b0a">parameter_string_</a>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Hello %s&quot;</span>, <a class="code" href="classParametersClass.html#a67a8aeaca8ff8179fc664ee29d8f1b0a">parameter_string_</a>.c_str());</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
-<div class="ttc" id="aclassParametersClass_html_a67a8aeaca8ff8179fc664ee29d8f1b0a"><div class="ttname"><a href="classParametersClass.html#a67a8aeaca8ff8179fc664ee29d8f1b0a">ParametersClass::parameter_string_</a></div><div class="ttdeci">std::string parameter_string_</div><div class="ttdef"><b>Definition:</b> <a href="parameters__node_8cpp_source.html#l00056">parameters_node.cpp:56</a></div></div>
+<p class="definition">Definition at line <a class="el" href="parameters__node_8cpp_source.html#l00047">47</a> of file <a class="el" href="parameters__node_8cpp_source.html">parameters_node.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      this-&gt;get_parameter(<span class="stringliteral">&quot;my_parameter&quot;</span>, <a class="code" href="classParametersClass.html#a67a8aeaca8ff8179fc664ee29d8f1b0a">parameter_string_</a>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Hello %s&quot;</span>, <a class="code" href="classParametersClass.html#a67a8aeaca8ff8179fc664ee29d8f1b0a">parameter_string_</a>.c_str());</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="ttc" id="aclassParametersClass_html_a67a8aeaca8ff8179fc664ee29d8f1b0a"><div class="ttname"><a href="classParametersClass.html#a67a8aeaca8ff8179fc664ee29d8f1b0a">ParametersClass::parameter_string_</a></div><div class="ttdeci">std::string parameter_string_</div><div class="ttdef"><b>Definition:</b> <a href="parameters__node_8cpp_source.html#l00054">parameters_node.cpp:54</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="classParametersClass.html#a0aa39a8fcc810d415c444f395dcc430c">ParametersClass()</a>.</p>
 <div class="dynheader">
@@ -221,7 +221,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="parameters__node_8cpp_source.html#l00056">56</a> of file <a class="el" href="parameters__node_8cpp_source.html">parameters_node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="parameters__node_8cpp_source.html#l00054">54</a> of file <a class="el" href="parameters__node_8cpp_source.html">parameters_node.cpp</a>.</p>
 
 </div>
 </div>
@@ -245,7 +245,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="parameters__node_8cpp_source.html#l00057">57</a> of file <a class="el" href="parameters__node_8cpp_source.html">parameters_node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="parameters__node_8cpp_source.html#l00055">55</a> of file <a class="el" href="parameters__node_8cpp_source.html">parameters_node.cpp</a>.</p>
 
 </div>
 </div>

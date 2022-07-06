@@ -62,26 +62,6 @@
     <member refid="namespaceall__launch_1ae678bdf16f781f65328eb0a43021c90c" kind="variable"><name>env_var_name</name></member>
     <member refid="namespaceall__launch_1adf61a15fe547d4d092b1cbd6a14ecff1" kind="function"><name>generate_launch_description</name></member>
   </compound>
-  <compound refid="namespaceconf" kind="namespace"><name>conf</name>
-    <member refid="namespaceconf_1a9c6aec1a9eee76857654aefd76c9a6c5" kind="variable"><name>file</name></member>
-    <member refid="namespaceconf_1a8d12755aa54c237c377547861225767a" kind="variable"><name>breathe_default_project</name></member>
-    <member refid="namespaceconf_1a23cf0a6214b803c950fd9215445f9241" kind="variable"><name>default_exhale_specs_mapping</name></member>
-    <member refid="namespaceconf_1acfc3de3406782f5938613e1b7ceff095" kind="variable"><name>exhale_specs_mapping</name></member>
-    <member refid="namespaceconf_1a7f1b143ff25817758abd21a7db110510" kind="variable"><name>html_theme</name></member>
-    <member refid="namespaceconf_1a45653c983098153b78e33600e39230eb" kind="variable"><name>project</name></member>
-    <member refid="namespaceconf_1a33fa97cf51dcb25970fbf53f10159589" kind="variable"><name>copyright</name></member>
-    <member refid="namespaceconf_1a637c239d256432248aa8d9f3ab0b8c52" kind="variable"><name>author</name></member>
-    <member refid="namespaceconf_1a325dc746d8bf05c54d26351c35a21d90" kind="variable"><name>release</name></member>
-    <member refid="namespaceconf_1ade15c5b54093b64d7c428ec19ca5b1cb" kind="variable"><name>version</name></member>
-    <member refid="namespaceconf_1ae475e080536acb271a0a0efe56c3ba42" kind="variable"><name>extensions</name></member>
-    <member refid="namespaceconf_1ae850ae634911b713e036b43894fdd525" kind="variable"><name>templates_path</name></member>
-    <member refid="namespaceconf_1a7ad48fb6f3e9b129c02346ea0d3527c1" kind="variable"><name>exclude_patterns</name></member>
-    <member refid="namespaceconf_1a6fcd7e5236f355b1e1a55f9d95988810" kind="variable"><name>master_doc</name></member>
-    <member refid="namespaceconf_1a8f403b478ab86c8b7663d82045f21741" kind="variable"><name>source_suffix</name></member>
-    <member refid="namespaceconf_1aeaafa42217d24810edc9b116b88a4585" kind="variable"><name>html_theme_options</name></member>
-    <member refid="namespaceconf_1ad52ab994fc73db35498097161f128509" kind="variable"><name>rosdoc2_settings</name></member>
-    <member refid="namespaceconf_1a1f263de5de89293c34954c5636bff98d" kind="function"><name>ensure_global</name></member>
-  </compound>
   <compound refid="namespaceexample__launch" kind="namespace"><name>example_launch</name>
     <member refid="namespaceexample__launch_1af49d150abaa0c5580b32932333d2f2c8" kind="function"><name>generate_launch_description</name></member>
   </compound>
@@ -100,10 +80,6 @@
   <compound refid="namespacetemplate__node__launch" kind="namespace"><name>template_node_launch</name>
     <member refid="namespacetemplate__node__launch_1af75f51023321cf03af4a47213f754924" kind="variable"><name>env_var_name</name></member>
     <member refid="namespacetemplate__node__launch_1ab74a78953f1919e7a85fbdc637d6b462" kind="function"><name>generate_launch_description</name></member>
-  </compound>
-  <compound refid="conf_8py" kind="file"><name>conf.py</name>
-  </compound>
-  <compound refid="default__sphinx__project_2conf_8py" kind="file"><name>conf.py</name>
   </compound>
   <compound refid="LICENSE_8md" kind="file"><name>LICENSE.md</name>
   </compound>
@@ -161,21 +137,13 @@
   </compound>
   <compound refid="dir_e6a08978a59536e8e721d917a6704728" kind="dir"><name>doc/docs_output/ros2_template_pkg/_static/collapsible-lists</name>
   </compound>
-  <compound refid="dir_7942e69bb106ca84dc9938958f04c8f1" kind="dir"><name>doc/docs_build/ros2_template_pkg/ros2_template_pkg/default_sphinx_project</name>
-  </compound>
   <compound refid="dir_e68e8157741866f444e17edd764ebbae" kind="dir"><name>doc</name>
-  </compound>
-  <compound refid="dir_55cc21aadbece90364c04f0881f692a0" kind="dir"><name>doc/docs_build</name>
   </compound>
   <compound refid="dir_b80630b7b114caf970531ea20ee583bc" kind="dir"><name>doc/docs_output</name>
   </compound>
   <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
   </compound>
   <compound refid="dir_81025302fd592f43a2d7c4fbb7eea7b8" kind="dir"><name>launch</name>
-  </compound>
-  <compound refid="dir_383e9e1e77c69eebc88de0abce68f898" kind="dir"><name>doc/docs_build/ros2_template_pkg</name>
-  </compound>
-  <compound refid="dir_94ad26aa8faae8ef72a1ccab8ce0da5b" kind="dir"><name>doc/docs_build/ros2_template_pkg/ros2_template_pkg</name>
   </compound>
   <compound refid="dir_aebd524469ddb7ce2e66a9db0cfce9e0" kind="dir"><name>doc/docs_output/ros2_template_pkg</name>
   </compound>

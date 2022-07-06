@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['file_157',['file',['../namespaceconf.html#a9c6aec1a9eee76857654aefd76c9a6c5',1,'conf']]]
+  ['subscription_5f_130',['subscription_',['../classMinimalSubscriber.html#ac8c2cc8053f6e9c526c9ad5daad35ba7',1,'MinimalSubscriber']]]
 ];
