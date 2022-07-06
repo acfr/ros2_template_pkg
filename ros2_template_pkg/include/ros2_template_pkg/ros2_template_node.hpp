@@ -37,7 +37,8 @@
 /*!
   This is a template for ros2 nodes. Not to be mistaken for c++ template
 */
-class RosTemplateNode {
+class RosTemplateNode
+{
    public:
       /**
        * \brief   The contructore of RosTemplateNode.
