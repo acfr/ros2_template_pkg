@@ -7,8 +7,10 @@ on:
       - master
 
 jobs:
-  build-and-test:
+  build_docker:
     runs-on: ubuntu-22.04
+    container:
+      image: ubuntu:jammy
     steps:
       - name: Setup ROS 2
         uses: ros-tooling/setup-ros@v0.3
