@@ -76,8 +76,8 @@ if(BUILD_TESTING)
   find_package(ament_cmake_xmllint REQUIRED)
   ament_xmllint()
 
-  find_package(ament_cmake_uncrustify REQUIRED)
-  ament_uncrustify(ARGN src include test LANGUAGE C++)
+  # find_package(ament_cmake_uncrustify REQUIRED)
+  # ament_uncrustify(ARGN src include test LANGUAGE C++)
 
   find_package(ament_cmake_gtest REQUIRED)
   ament_add_gtest(${PROJECT_NAME} test/test_ros2_template_node.cpp)
