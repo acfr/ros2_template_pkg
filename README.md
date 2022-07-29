@@ -20,13 +20,17 @@ It has the following all setup
 ### Prerequisites
 - Ubuntu 22.04 
 - ROS2 Humble 
+- Docker
+- Pre-Commit
 
 ### Install ROS2
-``` bash
-sudo apt-update 
-sudo apt-upgrade -y
-sudo apt install ros-humble-desktop
-```
+
+To install ROS2 follow the official instructions provided here. 
+
+Make sure to install the version that corresponds to the branch you require or slight modifications may be required to compile the code.
+
+https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html
+
 ### Create a Development Workspace
 ``` bash
 mkdir -p ~/dev_ws/src
@@ -42,6 +46,25 @@ git -c http.sslverify=false submodule update
 cd ../..
 rosdep install -i --from-path src --rosdistro humble -y
 colcon build
+```
+
+### Setup your Worksapce
+- Install pip
+`sudo apt install python3-pip`
+
+- Install Pre-Commit 
+`pip install pre-commit`
+
+- Install docker using the following instructions
+https://docs.docker.com/engine/install/ubuntu/
+
+- By default, Docker is only accessible with root privileges (sudo). If you want to use docker as a regular user, you need to add your user to the docker group.
+``` bash
+sudo addgroup --system docker
+sudo adduser $USER docker
+newgrp docker
+sudo snap disable docker
+sudo snap enable docker
 ```
 
 ## How to run 
@@ -60,8 +83,10 @@ colcon build
   `ros2 launch ros2_template_pkg all_launch.py`
 
 ## Unit Testing
+TODO: write notes on how to use
 
 ## Running in Docker
+TODO: Setup docker image
 
 ## House Keping
 
@@ -86,6 +111,23 @@ must end with `_node` postfix. This makes it easier to distinguish which files a
 ### Documentation 
 Doxygen used with rosdoc2 
 See [doxygen](https://doxygen.nl/manual/index.html) to learn more about comment style 
+
+#### Install rosdoc2
+- Clone the repo to some location in your computer 
+`git clone https://github.com/ros-infrastructure/rosdoc2.git`
+
+- From the root of this repo execute 
+`pip install --user --upgrade .`
+
+#### Generate Docs
+- Navigate one folder level deep from the root of the repository into ros2_template_pkg folder
+`cd ros2_template_pkg`
+
+- Create a folder called doc and move into it
+`mkdir doc` and `cd doc`
+
+- Execute the command to generate the docs. This let's rosdoc2 know to place the documentation in this folder(where you are currently executing the command from) and provides the path of the package which is one folder level above.
+`rosdoc2 build --package-path ..`
 
 ### Unit Testing
 [Google Tests](https://github.com/google/googletest)
