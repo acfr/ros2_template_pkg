@@ -5,21 +5,22 @@ on:
   push:
     branches:
       - master
+      - foxy
 
 jobs:
   build_docker:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-20.04
     container:
-      image: ubuntu:jammy
+      image: ubuntu:focal
     steps:
       - name: Setup ROS 2
         uses: ros-tooling/setup-ros@v0.3
         with:
-          required-ros-distributions: humble
+          required-ros-distributions: foxy
       - name: Run Tests
         uses: ros-tooling/action-ros-ci@v0.2
         with:
-          target-ros2-distro: humble
+          target-ros2-distro: foxy
           package-name: ros2_template_pkg
       - name: Upload Logs
         uses: actions/upload-artifact@v1
