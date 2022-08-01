@@ -61,23 +61,32 @@ install(TARGETS
 
 if(BUILD_TESTING)
 
+  set(
+    _linter_excludes
+
+    extern/googletest/googletest/test/*.cc
+    extern/googletest/googletest/test/*.py
+    extern/googletest/googletest/src/*.cc
+    extern/googletest/googletest/include/*.h
+  )
+
   find_package(ament_cmake_cpplint REQUIRED)
-  ament_cpplint(FILTERS -runtime/int)
+  ament_cpplint(FILTERS -runtime/int EXCLUDE ${_linter_excludes})
 
   find_package(ament_cmake_copyright REQUIRED)
-  ament_copyright()
+  ament_copyright(EXCLUDE ${_linter_excludes})
 
   find_package(ament_cmake_cppcheck REQUIRED)
   ament_cppcheck()
 
   find_package(ament_cmake_lint_cmake REQUIRED)
-  ament_lint_cmake()
+  ament_lint_cmake(EXCLUDE ${_linter_excludes})
 
   find_package(ament_cmake_xmllint REQUIRED)
   ament_xmllint()
 
-  # find_package(ament_cmake_uncrustify REQUIRED)
-  # ament_uncrustify(ARGN src include test LANGUAGE C++)
+  find_package(ament_cmake_uncrustify REQUIRED)
+  ament_uncrustify(ARGN src include test LANGUAGE C++)
 
   find_package(ament_cmake_gtest REQUIRED)
   ament_add_gtest(${PROJECT_NAME} test/test_ros2_template_node.cpp)
