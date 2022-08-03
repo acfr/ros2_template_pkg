@@ -43,7 +43,7 @@ void RosTemplateNode::print(std::string message)
 }
 
 
-bool RosTemplateNode::addTwoInts(int a, int b, int &sum)
+bool RosTemplateNode::addTwoInts(int a, int b, int & sum)
 {
   sum = a + b;
 

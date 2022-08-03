@@ -31,17 +31,20 @@
 #include "rclcpp/rclcpp.hpp"
 #include "acfr_ros2_interfaces/srv/add_two_ints.hpp"
 
-void add(const std::shared_ptr<acfr_ros2_interfaces::srv::AddTwoInts::Request> request,
-          std::shared_ptr<acfr_ros2_interfaces::srv::AddTwoInts::Response>      response)
+void add(
+  const std::shared_ptr<acfr_ros2_interfaces::srv::AddTwoInts::Request> request,
+  std::shared_ptr<acfr_ros2_interfaces::srv::AddTwoInts::Response> response)
 {
   response->sum = request->a + request->b;
-  RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Incoming request\na: %ld" " b: %ld",
-                request->a, request->b);
-  RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "sending back response: [%ld]",
-              (long int)response->sum);
+  RCLCPP_INFO(
+    rclcpp::get_logger("rclcpp"), "Incoming request\na: %ld" " b: %ld",
+    request->a, request->b);
+  RCLCPP_INFO(
+    rclcpp::get_logger("rclcpp"), "sending back response: [%ld]",
+    (long int)response->sum);
 }
 
-int main(int argc, char **argv)
+int main(int argc, char ** argv)
 {
   rclcpp::init(argc, argv);
 

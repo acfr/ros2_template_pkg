@@ -62,31 +62,31 @@ install(TARGETS
 if(BUILD_TESTING)
 
   set(
-    _linter_excludes
+    _dirs_to_check
 
-    extern/googletest/googletest/test/*.cc
-    extern/googletest/googletest/test/*.py
-    extern/googletest/googletest/src/*.cc
-    extern/googletest/googletest/include/*.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+    ${CMAKE_CURRENT_SOURCE_DIR}/test
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/launch
   )
 
-  find_package(ament_cmake_cpplint REQUIRED)
-  ament_cpplint(FILTERS -runtime/int EXCLUDE ${_linter_excludes})
-
   find_package(ament_cmake_copyright REQUIRED)
-  ament_copyright(EXCLUDE ${_linter_excludes})
+  ament_copyright(${_dirs_to_check})
+
+  find_package(ament_cmake_cpplint REQUIRED)
+  ament_cpplint(${_dirs_to_check} FILTERS -runtime/int)
 
   find_package(ament_cmake_cppcheck REQUIRED)
-  ament_cppcheck()
+  ament_cppcheck(${_dirs_to_check})
 
   find_package(ament_cmake_lint_cmake REQUIRED)
-  ament_lint_cmake(EXCLUDE ${_linter_excludes})
+  ament_lint_cmake(${CMAKE_CURRENT_SOURCE_DIR}/CMakeLists.txt)
 
   find_package(ament_cmake_xmllint REQUIRED)
-  ament_xmllint()
+  ament_xmllint(${_dirs_to_check} ${CMAKE_CURRENT_SOURCE_DIR})
 
   find_package(ament_cmake_uncrustify REQUIRED)
-  ament_uncrustify(ARGN src include test LANGUAGE C++)
+  ament_uncrustify(${_dirs_to_check} LANGUAGE C++)
 
   find_package(ament_cmake_gtest REQUIRED)
   ament_add_gtest(${PROJECT_NAME} test/test_ros2_template_node.cpp)
