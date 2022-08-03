@@ -1,3 +1,8 @@
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+
+## Build Status
+[![Test Template](https://github.com/acfr/ros2_template_pkg/actions/workflows/ci_actions.yml/badge.svg)](https://github.com/acfr/ros2_template_pkg/actions/workflows/ci_actions.yml)
+
 ## About
 
 A base template of a ROS2 package. This should be a good starting point when developing a new package for ROS2.
@@ -10,11 +15,6 @@ It has the following all setup
   - A simple Github action workflow for CI/CD
   - Simple unit test template
   - Documentation template
-
-[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
-
-## Build Status
-[![Test Template](https://github.com/acfr/ros2_template_pkg/actions/workflows/ci_actions.yml/badge.svg)](https://github.com/acfr/ros2_template_pkg/actions/workflows/ci_actions.yml)
 
 ## How to build
 ### Prerequisites
